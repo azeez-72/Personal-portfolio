@@ -2,86 +2,100 @@
 
 import { motion } from 'framer-motion';
 import {
-	Code2, Layout, Server, Database, MessageSquare, Lightbulb, Users, Brain,
-	Cloud, Terminal, Wrench,
+	Code2, Layout, Server, Database, Brain,
+	Cloud, Terminal, Wrench, Sparkles,
 } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 import {
-	JavaScriptLogo, HTML5Logo,
-	CSSLogo, ReactLogo, TypeScriptLogo, NodeLogo,
-	MongoDBLogo, VSCodeLogo, GitLogo, TailwindLogo, NextjsLogo,
-	VirtualBoxLogo, VercelLogo
+	JavaScriptLogo, ReactLogo, TypeScriptLogo, NodeLogo,
+	MongoDBLogo, VSCodeLogo, GitLogo,
 } from '@/components/TechLogos';
 
 const skills = [
   {
-    category: "Programming Languages",
+    category: "Languages",
     icon: <Code2 className="w-6 h-6" />,
     items: [
+      { name: "Python", icon: <Code2 className="w-5 h-5" /> },
+      { name: "Java", icon: <Code2 className="w-5 h-5" /> },
+      { name: "C++", icon: <Code2 className="w-5 h-5" /> },
+      { name: "C", icon: <Code2 className="w-5 h-5" /> },
       { name: "JavaScript", icon: <JavaScriptLogo /> },
       { name: "TypeScript", icon: <TypeScriptLogo /> },
+      { name: "Kotlin", icon: <Code2 className="w-5 h-5" /> },
+      { name: "Go", icon: <Code2 className="w-5 h-5" /> },
+      { name: "SQL", icon: <Code2 className="w-5 h-5" /> },
+      { name: "Shell (Bash)", icon: <Terminal className="w-5 h-5" /> },
+      { name: "HTML/CSS", icon: <Layout className="w-5 h-5" /> },
+      { name: "XML", icon: <Code2 className="w-5 h-5" /> },
     ],
   },
   {
-    category: "Front-End Development",
+    category: "ML/AI",
+    icon: <Brain className="w-6 h-6" />,
+    items: [
+      { name: "PyTorch", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "TensorFlow", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "Scikit-learn", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "NumPy", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "Pandas", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "Matplotlib", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "LangChain", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "LangGraph", icon: <Sparkles className="w-5 h-5" /> },
+      { name: "MCP", icon: <Sparkles className="w-5 h-5" /> },
+    ],
+  },
+  {
+    category: "Frameworks & Libraries",
     icon: <Layout className="w-6 h-6" />,
     items: [
-      { name: "HTML5", icon: <HTML5Logo /> },
-      { name: "CSS3", icon: <CSSLogo /> },
-      { name: "Tailwind", icon: <TailwindLogo /> },
-    ],
-  },
-  {
-    category: "Back-End Development",
-    icon: <Server className="w-6 h-6" />,
-    items: [
-      { name: "React.js", icon: <ReactLogo /> },
+      { name: "React", icon: <ReactLogo /> },
+      { name: "Spring Boot", icon: <Server className="w-5 h-5" /> },
+      { name: "FastAPI", icon: <Server className="w-5 h-5" /> },
+      { name: "Django", icon: <Server className="w-5 h-5" /> },
+      { name: "Streamlit", icon: <Layout className="w-5 h-5" /> },
+      { name: "Flask", icon: <Server className="w-5 h-5" /> },
+      { name: "Android", icon: <Layout className="w-5 h-5" /> },
       { name: "Node.js", icon: <NodeLogo /> },
-      { name: "Next.js", icon: <NextjsLogo /> },
+      { name: "JUnit", icon: <Wrench className="w-5 h-5" /> },
+      { name: "gRPC", icon: <Server className="w-5 h-5" /> },
     ],
   },
   {
-    category: "Databases & Cloud Storage",
+    category: "Databases & Cloud",
     icon: <Database className="w-6 h-6" />,
     items: [
+      { name: "PostgreSQL", icon: <Database className="w-5 h-5" /> },
+      { name: "MySQL", icon: <Database className="w-5 h-5" /> },
       { name: "MongoDB", icon: <MongoDBLogo /> },
-      { name: "Cloudinary", icon: <Cloud className="w-4 h-4" /> },
-    ],
-  },
-  {
-    category: "Version Control & DevOps",
-    icon: <GitLogo />,
-    items: [
-      { name: "Git", icon: <GitLogo /> },
-      { name: "GitHub", icon: <GitLogo /> },
-      { name: "Vercel", icon: <VercelLogo /> },
+      { name: "Redis", icon: <Database className="w-5 h-5" /> },
+      { name: "Oracle", icon: <Database className="w-5 h-5" /> },
+      { name: "Cloud Firestore", icon: <Cloud className="w-5 h-5" /> },
+      { name: "GCP", icon: <Cloud className="w-5 h-5" /> },
+      { name: "Azure", icon: <Cloud className="w-5 h-5" /> },
+      { name: "AWS", icon: <Cloud className="w-5 h-5" /> },
+      { name: "Kafka", icon: <Database className="w-5 h-5" /> },
+      { name: "Spark", icon: <Database className="w-5 h-5" /> },
+      { name: "GraphQL", icon: <Database className="w-5 h-5" /> },
+      { name: "FAISS", icon: <Database className="w-5 h-5" /> },
+      { name: "ChromaDB", icon: <Database className="w-5 h-5" /> },
     ],
   },
   {
     category: "Tools & Platforms",
     icon: <Wrench className="w-6 h-6" />,
     items: [
+      { name: "Git", icon: <GitLogo /> },
+      { name: "Linux", icon: <Terminal className="w-5 h-5" /> },
+      { name: "Docker", icon: <Wrench className="w-5 h-5" /> },
+      { name: "Hadoop", icon: <Wrench className="w-5 h-5" /> },
+      { name: "Hive", icon: <Wrench className="w-5 h-5" /> },
+      { name: "HDFS", icon: <Wrench className="w-5 h-5" /> },
+      { name: "Kubernetes", icon: <Wrench className="w-5 h-5" /> },
+      { name: "Jenkins", icon: <Wrench className="w-5 h-5" /> },
+      { name: "CI/CD", icon: <Wrench className="w-5 h-5" /> },
+      { name: "REST API", icon: <Server className="w-5 h-5" /> },
       { name: "VS Code", icon: <VSCodeLogo /> },
-      { name: "Compass", icon: <MongoDBLogo /> },
-      { name: "VirtualBox", icon: <VirtualBoxLogo /> },
-    ],
-  },
-  {
-    category: "Operating Systems",
-    icon: <Terminal className="w-6 h-6" />,
-    items: [
-      { name: "Windows", icon: <Terminal className="w-4 h-4" /> },
-      { name: "Ubuntu", icon: <Terminal className="w-4 h-4" /> },
-      { name: "Linux", icon: <Terminal className="w-4 h-4" /> },
-    ],
-  },
-  {
-    category: "Soft Skills",
-    icon: <Brain className="w-6 h-6" />,
-    items: [
-      { name: "Teamwork", icon: <Users className="w-4 h-4" /> },
-      { name: "Communication", icon: <MessageSquare className="w-4 h-4" /> },
-      { name: "Debugging", icon: <Wrench className="w-4 h-4" /> },
     ],
   },
 ];

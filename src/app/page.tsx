@@ -3,6 +3,7 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import Loading from "@/components/Loading";
+import { SHOW_CERTIFICATES } from "@/config/navigation";
 
 const Home = dynamic(() => import("@/pages/Home"), {
   loading: () => <Loading />,
@@ -65,9 +66,11 @@ export default function HomePage() {
       <section id="projects" className="scroll-mt-20">
         <Projects />
       </section>
-      <section id="certificates" className="scroll-mt-20">
-        <Certificates />
-      </section>
+      {SHOW_CERTIFICATES ? (
+        <section id="certificates" className="scroll-mt-20">
+          <Certificates />
+        </section>
+      ) : null}
       <section id="contact" className="scroll-mt-20">
         <Contact />
       </section>

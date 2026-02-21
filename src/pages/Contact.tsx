@@ -46,24 +46,24 @@ const Contact = () => {
 		{
 			icon: <Mail className="w-5 h-5" />,
 			label: 'Email',
-			value: 'code.niladri@gmail.com',
-			link: 'mailto:code.niladri@gmail.com'
+			value: 'azeezdandawala@gmail.com',
+			link: 'mailto:azeezdandawala@gmail.com'
 		},
 		{
 			icon: <Phone className="w-5 h-5" />,
 			label: 'Phone',
-			value: '+916296554939',
-			link: 'tel:+916296554939'
+			value: '+1 (934) 221-6299',	
+			link: 'tel:+1 (934)221-6299'
 		},
 		{
 			icon: <MapPin className="w-5 h-5" />,
 			label: 'Location',
-			value: 'Kolkata, West Bengal, India'
+			value: 'Stony Brook, NY, USA'
 		},
 		{
 			icon: <Clock className="w-5 h-5" />,
 			label: 'Time Zone',
-			value: 'IST (UTC+5:30)'
+			value: 'EST (UTC-5)'
 		}
 	];
 
@@ -71,17 +71,17 @@ const Contact = () => {
 		{
 			icon: <Github className="w-5 h-5" />,
 			label: 'GitHub',
-			link: 'https://github.com/niladri-1'
+			link: 'https://github.com/azeez-72'
 		},
 		{
 			icon: <Linkedin className="w-5 h-5" />,
 			label: 'LinkedIn',
-			link: 'https://linkedin.com/in/niladri1'
+			link: 'https://linkedin.com/in/azeez-dandawala'
 		},
 		{
 			icon: <MessageCircle className="w-5 h-5" />,
 			label: 'WhatsApp',
-			link: 'https://wa.me/+916296554939'
+			link: 'https://wa.me/+1 (934) 221-6299'
 		}
 	];
 
@@ -177,20 +177,6 @@ const Contact = () => {
 										</span>
 									</motion.a>
 								))}
-							</div>
-						</motion.div>
-
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.6 }}
-							className="bg-gray-800/50 p-5 sm:p-6 rounded-xl backdrop-blur-sm"
-						>
-							<h3 className="text-lg sm:text-xl font-semibold mb-4">Office Hours</h3>
-							<div className="space-y-2 text-gray-400 text-sm sm:text-base">
-								<p>Monday - Friday: 9:00 AM - 6:00 PM (IST)</p>
-								<p>Saturday: 10:00 AM - 2:00 PM (IST)</p>
-								<p>Sunday: Closed</p>
 							</div>
 						</motion.div>
 					</div>

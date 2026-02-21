@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { Mail } from 'lucide-react';
+
 
 const socialLinks = [
   {
@@ -123,7 +125,7 @@ const Home = () => {
           >
             <div className="absolute left-0 flex items-center">
               <div className="w-3 text-gray-500 group-hover:text-white transition-colors">
-                <VercelLogo />
+                <Mail className="w-5 h-5" aria-hidden="true" />
               </div>
               <span className="text-lg font-mono text-gray-400 ml-3 group-hover:text-white transition-colors">
                 ~

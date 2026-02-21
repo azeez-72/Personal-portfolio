@@ -2,15 +2,15 @@ import Certificates from '@/pages/Certificates';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Certificates & Achievements - Niladri Chatterjee | Certifications",
+  title: "Certificates & Achievements - Azeez Dandawala | Certifications",
   description:
-    "Professional certificates and achievements of Niladri Chatterjee. Certifications in JavaScript, TypeScript, Python, Docker Fundamentals, AWS ECS, Cybersecurity, and more. Verified skills and continuous learning in web development and software engineering.",
+    "Professional certificates and achievements of Azeez Dandawala. Certifications in JavaScript, TypeScript, Python, Docker Fundamentals, AWS ECS, Cybersecurity, and more. Verified skills and continuous learning in backend & machine learning and software engineering.",
   keywords:
     "Certificates, Certifications, Achievements, Professional Certifications, JavaScript Certificate, TypeScript Certificate, Docker Certificate, AWS Certificate, Web Development Certifications, Programming Certificates",
   openGraph: {
-    title: "Certificates & Achievements - Niladri Chatterjee",
+    title: "Certificates & Achievements - Azeez Dandawala",
     description: "My professional certificates and achievements",
-    url: "https://niladri1.vercel.app/certificates",
+    url: "https://{tbd}/certificates",
     type: "website",
   },
   twitter: {

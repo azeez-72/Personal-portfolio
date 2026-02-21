@@ -3,20 +3,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title:
-    "Contact Niladri Chatterjee - Hire Full Stack Developer | Get in Touch",
+    "Contact Azeez Dandawala",
   description:
-    "Get in touch with Niladri Chatterjee for web development projects, freelance work, collaboration opportunities, or job inquiries. Email: code.niladri@gmail.com | Phone: +916296554939. Based in Kolkata, India. Available for remote work worldwide.",
+    "Get in touch with Azeez Dandawala for web development projects, freelance work, collaboration opportunities, or job inquiries. Email: azeezdandawala@gmail.com | Phone: +1 (934) 221-6299. Based in Stony Brook, NY, USA. Available for remote work worldwide.",
   keywords:
-    "Contact Niladri Chatterjee, Hire Full Stack Developer, Freelance Web Developer, Contact Web Developer, Hire MERN Stack Developer, Web Development Services, Remote Developer Hire, Developer Contact Kolkata",
+    "Contact Azeez Dandawala, Hire Full Stack Developer, Freelance Web Developer, Contact Web Developer, Hire MERN Stack Developer, Web Development Services, Remote Developer Hire, Developer Contact Stony Brook, NY, USA",
   openGraph: {
-    title: "Contact Niladri Chatterjee - Full Stack Developer",
+    title: "Contact Azeez Dandawala - Full Stack Developer",
     description: "Get in touch for web development projects and collaboration",
-    url: "https://niladri1.vercel.app/contact",
+    url: "https://{tbd}/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Niladri Chatterjee",
+    title: "Contact Azeez Dandawala",
     description: "Get in touch for web development projects",
   },
   alternates: {

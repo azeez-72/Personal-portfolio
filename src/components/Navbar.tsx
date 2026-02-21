@@ -3,21 +3,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Code2, Menu, X } from "lucide-react";
-import SearchDialog from "./SearchDialog";
+import { SHOW_CERTIFICATES } from "@/config/navigation";
+
+const allNavLinks = [
+  { path: "#home", label: "Home" },
+  { path: "#about", label: "About" },
+  { path: "#education", label: "Education" },
+  { path: "#experience", label: "Experience" },
+  { path: "#skills", label: "Skills" },
+  { path: "#projects", label: "Projects" },
+  ...(SHOW_CERTIFICATES ? [{ path: "#certificates" as const, label: "Certificates" }] : []),
+  { path: "#contact", label: "Contact" },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navLinks = [
-    { path: "#home", label: "Home" },
-    { path: "#about", label: "About" },
-    { path: "#education", label: "Education" },
-    { path: "#experience", label: "Experience" },
-    { path: "#skills", label: "Skills" },
-    { path: "#projects", label: "Projects" },
-    { path: "#certificates", label: "Certificates" },
-    { path: "#contact", label: "Contact" },
-  ];
 
   return (
     <motion.nav
@@ -34,13 +34,12 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#home" className="flex items-center space-x-3">
               <Code2 className="w-8 h-8 text-white" aria-hidden="true" />
-              <span className="text-xl font-bold text-white">Niladri</span>
+              <span className="text-xl font-bold text-white">Azeez</span>
             </a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <SearchDialog />
-              {navLinks.map((link) => (
+              {allNavLinks.map((link) => (
                 <a
                   key={link.path}
                   href={link.path}
@@ -53,7 +52,6 @@ const Navbar = () => {
 
             {/* Mobile header right section */}
             <div className="flex md:hidden items-center space-x-2">
-              <SearchDialog />
               <button
                 className="p-2 text-gray-400 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -79,7 +77,7 @@ const Navbar = () => {
             transition={{ duration: 0.2 }}
           >
             <div className="px-4 pt-2 pb-3 space-y-1">
-              {navLinks.map((link) => (
+              {allNavLinks.map((link) => (
                 <a
                   key={link.path}
                   href={link.path}

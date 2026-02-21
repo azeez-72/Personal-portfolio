@@ -24,29 +24,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   // Basic metadata
   title: {
-    default: "Niladri Chatterjee - Full Stack Developer | MERN Stack Expert",
-    template: "%s | Niladri Chatterjee",
+    default: "Azeez Dandawala - Backend & Machine Learning",
+    template: "%s | Azeez Dandawala",
   },
   description:
-    "Niladri Chatterjee - Full Stack Developer specializing in MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js, TypeScript, and modern web technologies. Expert in building scalable web applications, database development, and cloud solutions. Based in Kolkata, India.",
+    "Azeez Dandawala - Backend & Machine Learning specializing in Backend Development and Machine Learning. Expert in building scalable systems, APIs, and intelligent solutions. Based in Stony Brook, NY, USA.",
 
   // Extended keywords for better SEO
   keywords: [
     // Name variations
-    "Niladri Chatterjee",
-    "Niladri1",
-    "niladri1",
-
-    // Job titles
-    "Full Stack Developer",
-    "Software Developer",
-    "Software Engineer",
-    "Web Developer",
-    "MERN Stack Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "React Developer",
-    "Node.js Developer",
+    "Azeez Dandawala",
+    "azeez-72",
+    "azeez-dandawala",
 
     // Technologies - Frontend
     "React.js",

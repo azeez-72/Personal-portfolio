@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from "next/link";
-import { Code2, Briefcase, GraduationCap, Award, Users, Globe } from 'lucide-react';
+import { Code2, Briefcase, GraduationCap, Globe, Heart } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const About = () => {
@@ -30,6 +30,15 @@ const About = () => {
 		"Data Engineering",
 		"Data Science",
 		"APIs & Distributed Systems",
+	];
+
+	const hobbies = [
+		"Body Building",
+		"Badminton",
+		"F1 Racing",
+		"Chess",
+		"Cricket",
+		"Cooking",
 	];
 
 	return (
@@ -112,6 +121,22 @@ const About = () => {
 									<div className="text-white mb-4">{achievement.icon}</div>
 									<h4 className="text-xl font-semibold mb-2">{achievement.title}</h4>
 									<p className="text-gray-400">{achievement.description}</p>
+								</div>
+							</ScrollAnimation>
+						))}
+					</div>
+				</div>
+			</ScrollAnimation>
+
+			<ScrollAnimation>
+				<div className="mt-16">
+					<h3 className="text-2xl font-semibold mb-8 gradient-text">Hobbies</h3>
+					<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+						{hobbies.map((hobby) => (
+							<ScrollAnimation key={hobby}>
+								<div className="bg-white/5 p-4 rounded-xl backdrop-blur-sm flex items-center gap-3">
+									<Heart className="w-5 h-5 text-gray-400" />
+									<span className="text-gray-300">{hobby}</span>
 								</div>
 							</ScrollAnimation>
 						))}
