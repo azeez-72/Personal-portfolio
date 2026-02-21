@@ -14,7 +14,7 @@ This project is configured to deploy to GitHub Pages via GitHub Actions.
 
 Push to the `main` branch to trigger the deployment workflow. The site will be available at:
 
-- **Project site** (repo named `Personal-portfolio`): `https://YOUR_USERNAME.github.io/Personal-portfolio`
+- **Project site** (repo named `personal-portfolio`): `https://YOUR_USERNAME.github.io/personal-portfolio`
 - **User/Org site** (repo named `YOUR_USERNAME.github.io`): `https://YOUR_USERNAME.github.io`
 
 ### 3. Local Test (Optional)
