@@ -30,7 +30,7 @@ const socialLinks = [
     ariaLabel: "Visit LeetCode profile",
   },
   {
-    href: "https://medium.com/@azeezdandawala",
+    href: "https://medium.com/@officialazeezamd",
     icon: BookOpen,
     label: "Medium",
     ariaLabel: "Visit Medium profile",

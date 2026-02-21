@@ -13,7 +13,7 @@ const Education = () => {
 			duration: "August 2025 - May 2027",
 			degree: "M.S. (Computer Science)",
 			grade: "GPA: 4.0",
-			image: "/education/stony-brook.png",
+			image: "/education/sbu.png",
 			resultUrl: "/files/education_pdf/M Tech.pdf",
 			coursework: [
 				"Operating Systems",
@@ -30,7 +30,7 @@ const Education = () => {
 			duration: "August 2019 - May 2023",
 			degree: "B.Tech (Computer Engineering)",
 			grade: "CGPA: 8.48",
-			image: "/education/vjti.png",
+			image: "/education/vjti.jpg",
 			resultUrl: "/files/education_pdf/B Tech.pdf",
 			subjects: [
 				"DSA",

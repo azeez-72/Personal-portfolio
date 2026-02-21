@@ -98,34 +98,34 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Niladri Chatterjee",
-      url: "https://niladri1.vercel.app",
+      name: "Azeez Dandawala",
+      url: "https://azeezdandawala.com",
     },
   ],
-  creator: "Niladri Chatterjee",
-  publisher: "Niladri Chatterjee",
+  creator: "Azeez Dandawala",
+  publisher: "Azeez Dandawala",
 
   // Manifest
   manifest: "/manifest.json",
 
   // App-specific metadata
-  applicationName: "Niladri Chatterjee Portfolio",
+  applicationName: "Azeez Dandawala Portfolio",
 
   // OpenGraph metadata for social sharing
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://niladri1.vercel.app/",
-    title: "Niladri Chatterjee - Full Stack Developer | MERN Stack Expert",
+    url: "https://azeezdandawala.com/",
+    title: "Azeez Dandawala - Backend & Machine Learning",
     description:
-      "Full Stack Developer specializing in MERN stack, React.js, Node.js, Next.js, and modern web technologies. Expert in building scalable web applications and database solutions.",
-    siteName: "Niladri Chatterjee Portfolio",
+      "Backend & Machine Learning specializing in Backend Development and Machine Learning. Expert in building scalable systems, APIs, and intelligent solutions.",
+    siteName: "Azeez Dandawala Portfolio",
     images: [
       {
-        url: "https://niladri1.vercel.app/profile/profile.jpg",
+        url: "https://azeezdandawala.com/profile/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Niladri Chatterjee - Full Stack Developer",
+        alt: "Azeez Dandawala - Backend & Machine Learning",
       },
     ],
   },
@@ -133,11 +133,11 @@ export const metadata: Metadata = {
   // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
-    title: "Niladri Chatterjee - Full Stack Developer | MERN Stack Expert",
+    title: "Azeez Dandawala - Backend & Machine Learning",
     description:
-      "Full Stack Developer specializing in MERN stack, React.js, Node.js, and modern web technologies.",
-    creator: "@niladri_dev",
-    images: ["https://niladri1.vercel.app/profile/profile.jpg"],
+      "Backend & Machine Learning specializing in Backend Development and Machine Learning. Expert in building scalable systems, APIs, and intelligent solutions.",
+    creator: "@azeez-dandawala",
+    images: ["https://azeezdandawala.com/profile/profile.jpg"],
   },
 
   // Robots configuration
@@ -156,7 +156,7 @@ export const metadata: Metadata = {
   },
 
   // Base URL for relative URLs
-  metadataBase: new URL("https://niladri1.vercel.app"),
+  metadataBase: new URL("https://azeezdandawala.com"),
 
   // Canonical URL
   alternates: {
@@ -186,43 +186,40 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Niladri Chatterjee",
-    alternateName: "Niladri1",
-    url: "https://niladri1.vercel.app",
-    image: "https://niladri1.vercel.app/profile/profile.jpg",
+    name: "Azeez Dandawala",
+      alternateName: "Azeez Dandawala",
+    url: "https://azeezdandawala.com",
+    image: "https://azeezdandawala.com/profile/profile.jpg",
     sameAs: [
-      "https://github.com/niladri-1",
-      "https://linkedin.com/in/niladri1",
+      "https://github.com/azeez-72",
+      "https://linkedin.com/in/azeez-dandawala",
     ],
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Backend & Machine Learning",
     worksFor: {
       "@type": "Organization",
       name: "Freelance",
     },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Kolkata",
-      addressRegion: "West Bengal",
-      addressCountry: "IN",
+      addressLocality: "Stony Brook",
+      addressRegion: "New York",
+      addressCountry: "USA",
     },
-    email: "code.niladri@gmail.com",
-    telephone: "+916296554939",
+    email: "azeezdandawala@gmail.com",
+    telephone: "+1 (934) 221-6299",
     knowsAbout: [
       "Full Stack Development",
-      "MERN Stack",
-      "React.js",
-      "Node.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript",
-      "MongoDB",
-      "SQL",
-      "Web Development",
-      "Database Development",
+      "Backend Development",
+      "Machine Learning",
+      "Data Science",
+      "Data Engineering",
+      "API Development",
+      "Cloud Computing",
+      "DevOps",
     ],
     alumniOf: {
       "@type": "EducationalOrganization",
-      name: "Bengal College of Engineering and Technology",
+      name: "Stony Brook University",
     },
   };
 
@@ -252,7 +249,7 @@ export default function RootLayout({
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
-        <meta name="apple-mobile-web-app-title" content="Niladri Portfolio" />
+        <meta name="apple-mobile-web-app-title" content="Azeez Dandawala Portfolio" />
       </head>
       <body>
         <div className="min-h-screen flex flex-col">

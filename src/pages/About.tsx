@@ -2,25 +2,25 @@
 
 import { motion } from 'framer-motion';
 import Link from "next/link";
-import { Code2, Briefcase, GraduationCap, Globe, Heart } from 'lucide-react';
+import { Code2, Briefcase, GraduationCap, Globe, Heart, Trophy } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const About = () => {
 	const achievements = [
 		{
-			icon: <Code2 className="w-6 h-6" />,
-			title: "10+ Projects",
-			description: "Backend systems, APIs & ML pipelines"
+			icon: <Trophy className="w-6 h-6" />,
+			title: "4 Hackathon Wins",
+			description: "Across colleges and company wide hacks"
 		},
 		{
 			icon: <Briefcase className="w-6 h-6" />,
-			title: "3+ Internships",
-			description: "Fintech experience (Wells Fargo, Fiserv)"
+			title: "10+ Projects",
+			description: "Web Develoopment and ML"
 		},
 		{
 			icon: <GraduationCap className="w-6 h-6" />,
-			title: "4.0 GPA",
-			description: "Masters in Computer Science"
+			title: "Featured in Mumbai Mirror",
+			description: "Academic excellence"
 		}
 	];
 
@@ -77,7 +77,7 @@ const About = () => {
 						<div className="pt-4">
 							<h3 className="text-2xl font-semibold mb-4 gradient-text">Quick Facts</h3>
 							<ul className="list-none space-y-3">
-								{["I love finding problems and asking questions", "I can type faster than a typist", "I love to travel and explore new places", "I love challenging myself even if its riding off a cliff!!"].map((fact, index) => (
+								{["I can type faster than a typist", "I love finding problems and asking questions", "I love to travel and explore new places", "I love challenging myself even if its riding off a cliff!!"].map((fact, index) => (
 									<motion.li
 										key={fact}
 										className="flex items-center space-x-2 text-gray-300"
