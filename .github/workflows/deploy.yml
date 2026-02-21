@@ -51,6 +51,9 @@ jobs:
           REPO_IS_GH_PAGES: ${{ steps.repo.outputs.repo_is_gh_pages }}
         run: npm run build
 
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
