@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Work Experience - Azeez Dandawala",
     description: "My professional journey as a Backend & Machine Learning",
-    url: "https://azeezdandawala.com/experience",
+    url: "https://azeez72.netlify.app/experience",
     type: "website",
   },
   twitter: {

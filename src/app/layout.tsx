@@ -99,7 +99,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Azeez Dandawala",
-      url: "https://azeezdandawala.com",
+      url: "https://azeez72.netlify.app",
     },
   ],
   creator: "Azeez Dandawala",
@@ -115,14 +115,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://azeezdandawala.com/",
+    url: "https://azeez72.netlify.app/",
     title: "Azeez Dandawala - Backend & Machine Learning",
     description:
       "Backend & Machine Learning specializing in Backend Development and Machine Learning. Expert in building scalable systems, APIs, and intelligent solutions.",
     siteName: "Azeez Dandawala Portfolio",
     images: [
       {
-        url: "https://azeezdandawala.com/profile/profile.jpg",
+        url: "https://azeez72.netlify.app/profile/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Azeez Dandawala - Backend & Machine Learning",
@@ -137,7 +137,7 @@ export const metadata: Metadata = {
     description:
       "Backend & Machine Learning specializing in Backend Development and Machine Learning. Expert in building scalable systems, APIs, and intelligent solutions.",
     creator: "@azeez-dandawala",
-    images: ["https://azeezdandawala.com/profile/profile.jpg"],
+    images: ["https://azeez72.netlify.app/profile/profile.jpg"],
   },
 
   // Robots configuration
@@ -156,7 +156,7 @@ export const metadata: Metadata = {
   },
 
   // Base URL for relative URLs
-  metadataBase: new URL("https://azeezdandawala.com"),
+  metadataBase: new URL("https://azeez72.netlify.app"),
 
   // Canonical URL
   alternates: {
@@ -188,8 +188,8 @@ export default function RootLayout({
     "@type": "Person",
     name: "Azeez Dandawala",
       alternateName: "Azeez Dandawala",
-    url: "https://azeezdandawala.com",
-    image: "https://azeezdandawala.com/profile/profile.jpg",
+    url: "https://azeez72.netlify.app",
+    image: "https://azeez72.netlify.app/profile/profile.jpg",
     sameAs: [
       "https://github.com/azeez-72",
       "https://linkedin.com/in/azeez-dandawala",

@@ -2,22 +2,13 @@ const withPWA = require("next-pwa")({
   dest: "public",
   register: true,
   skipWaiting: true,
-  disable: process.env.NODE_ENV === "development" || process.env.GITHUB_PAGES === "true",
+  disable: process.env.NODE_ENV === "development",
 });
-
-const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const basePath = isGitHubPages
-  ? (process.env.REPO_IS_GH_PAGES === "true" ? "" : (process.env.BASE_PATH || "/Personal-portfolio"))
-  : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isGitHubPages ? "export" : undefined,
-  basePath: basePath,
-  assetPrefix: basePath || undefined,
   reactStrictMode: true,
   images: {
-    unoptimized: isGitHubPages,
     remotePatterns: [
       {
         protocol: "https",

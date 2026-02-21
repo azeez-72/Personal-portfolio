@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "About Azeez Dandawala - Masters student at Stony Brook University",
     description:
       "Learn about my journey as a Masters student at Stony Brook University specializing in backend development and data engineering",
-    url: "https://azeezdandawala.com/about",
+    url: "https://azeez72.netlify.app/about",
     type: "profile",
   },
   twitter: {

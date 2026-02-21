@@ -1,4 +1,4 @@
-# robots.txt for https://niladri1.vercel.app/
+# robots.txt for https://azeez72.netlify.app/
 # Optimized for maximum SEO crawling
 
 # Allow all search engines to crawl everything
@@ -36,7 +36,7 @@ Allow: /files/*.pdf$
 Allow: /*.pdf$
 
 # Sitemap location
-Sitemap: https://niladri1.vercel.app/sitemap.xml
+Sitemap: https://azeez72.netlify.app/sitemap.xml
 
 # Crawl delay to be respectful (optional, can be removed for faster crawling)
 # Crawl-delay: 1
