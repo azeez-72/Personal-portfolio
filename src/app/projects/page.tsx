@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Projects - Portfolio by Azeez Dandawala",
     description:
       "View my latest web development projects and full-stack applications",
-    url: "https://azeezdandawala.com/projects",
+    url: "https://azeez72.netlify.app/projects",
     type: "website",
   },
   twitter: {

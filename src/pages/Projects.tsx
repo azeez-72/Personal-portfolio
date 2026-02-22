@@ -6,53 +6,53 @@ import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const projects = [
 	{
-		title: 'Live Docs',
-		description: 'Real-time collaborative document editor built with Next.js, TypeScript, and Tailwind CSS, featuring live editing, comments, and notifications.',
-		image: '/projects_img/project-1.png',
-		github: 'https://github.com/niladri-1/LiveDocs',
-		live: 'https://livedocs11.vercel.app',
-		tags: ["Next.js", "TypeScript", "Liveblocks", "Lexical Editor", "ShadCN", "Tailwind CSS"]
+		title: 'GenAI Platform Support Application',
+		description: 'GenAI-powered integrated platform support application that empowers platform support teams with intelligent automation, contextual insights, and seamless incident resolution capabilities. Features agentic incident resolution, AI chatbot assistance, and enterprise data integration.',
+		image: '/projects_img/wfhack25.png',
+		github: 'https://github.com/azeez-72/WFHack25',
+		demo: 'https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link',
+		tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "FAISS", "Ollama", "RAG", "Mistral"]
 	},
 	{
-		title: 'Figma Clone',
-		description: 'A real-time collaborative design tool inspired by Figma. This application allows users to create, modify, and collaborate on designs in real- time.',
-		image: '/projects_img/project-2.png',
-		github: 'https://github.com/niladri-1/Figma-Clone',
-		live: 'https://tigma1.vercel.app/',
-		tags: ["Next.js", "TypeScript", "Liveblocks", "Fabric.js", "Shadcn", "Tailwind CSS"]
+		title: 'AEGIS - IoT Security System',
+		description: 'Intrusion detection and alerting system using eBPF programs to secure IoT devices. Provides network observability statistics, malicious activity alerts, and real-time threat detection with rule-based engine for DoS and ICMP flooding attacks.',
+		image: '/projects_img/aegis-hub.png',
+		github: 'https://github.com/azeez-72/aegis-hub',
+		demo: 'https://tome.app/kernel-krypts/refaktor-hackathon-kernel-krypts-aegis-clejk95n00054enhly9nwa0rm',
+		tags: ["eBPF", "Rust", "Python", "Flask", "Raspberry Pi", "IoT Security", "Network Monitoring", "Intrusion Detection"]
 	},
 	{
-		title: 'Video Conferencing App',
-		description: 'The Video Conferencing App enables users to create and join video meetings with chat, screen sharing, and recording features.',
-		image: '/projects_img/project-3.png',
-		github: 'https://github.com/niladri-1/Video-Conferencing-App',
-		live: 'https://yoom01.vercel.app/',
-		tags: ["Tailwind CSS", "React.js", "Next.js", "Clerk", "Stream"]
+		title: 'Qwen GradCAM Evaluation',
+		description: 'Panel-level attribution study on MuSciClaims scientific figure dataset. Investigates visual grounding behavior of Qwen 2.5 VL model across multiple baselines, achieving 87.81% accuracy in guided claim verification with systematic Grad-CAM analysis.',
+		image: '/projects_img/qwen-gradcam.jpeg',
+		github: 'https://github.com/azeez-72/Qwen-GradCAM-Evaluation',
+		live: '',
+		tags: ["Python", "PyTorch", "Grad-CAM", "Vision-Language Models", "Scientific Computing", "Qwen 2.5 VL", "AI Research"]
 	},
 	{
-		title: 'Gemini Chatbot',
-		description: 'React-based chatbot clone of Google Gemini AI. It offers a chat interface, uses Gemini for responses, and is styled with CSS.',
-		image: '/projects_img/project-4.png',
-		github: 'https://github.com/niladri-1/Gemini-Chatbot',
-		live: 'https://gamini-bot.vercel.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'Google APIs']
+		title: 'Knox - P2P Chat Application',
+		description: 'Peer-to-peer mobile chat application with no server intermediary, ensuring user privacy and security. Features alias creation, text/file messaging, peer blocking, and direct socket-based communication within same network.',
+		image: '/projects_img/knox.png',
+		github: 'https://github.com/azeez-72/Knox',
+		demo: 'https://github.com/pk-218/KotlinX/releases/download/v1.0.0/app-debug.apk',
+		tags: ["Kotlin", "Android", "MVVM", "Jetpack Libraries", "Hilt", "Coroutines", "Socket Programming"]
 	},
 	{
-		title: 'Travel App',
-		description: 'Travel App is a Next.js web application offering travel information, built with Tailwind CSS for a modular, responsive user interface.',
-		image: '/projects_img/project-5.png',
-		github: 'https://github.com/niladri-1/Travel-App',
-		live: 'https://hilinking.vercel.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'TypeScript']
+		title: 'Dwarpaal - DGX Management Portal',
+		description: 'Web portal for managing Nvidia DGX system access and monitoring. Simplifies user account creation, provides unified kernel usage statistics, GPU/memory monitoring, and eliminates manual paperwork for academic research access.',
+		image: '/projects_img/dwarpal.png',
+		github: 'https://github.com/azeez-72/dwarpal',
+		live: '',
+		tags: ["Go", "React", "Nodejs", "PostgreSQL"]
 	},
 	{
-		title: 'Brainwave Project',
-		description: 'A modern AI application built with React JS and Tailwind CSS, featuring smooth animations, unique design elements, and responsive layouts.Ideal for enhancing web development skills',
-		image: '/projects_img/project-6.png',
-		github: 'https://github.com/niladri-1/Brainwave-Project',
-		live: 'https://brainswave.netlify.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'Vite']
-	},
+		title: 'EcoConnect - Waste Management',
+		description: 'Connects households to NGOs for recyclable waste collection and processing. Features ML-powered garbage classification using AutoML Vision Edge, Google Maps integration, and scheduled pickup notifications.',
+		image: '/projects_img/ecoconnect.jpeg',
+		github: 'https://github.com/azeez-72/EcoConnect',
+		demo: 'https://youtu.be/bsOMK3T-6Yw',
+		tags: ["Kotlin", "Android", "MVVM", "Firebase", "AutoML Vision Edge", "Google Cloud Platform"]
+	}
 ];
 
 const Projects = () => {
@@ -87,11 +87,13 @@ const Projects = () => {
 										<Github className="w-4 h-4" />
 										<span>Code</span>
 									</a>
-									<a href={project.live} target="_blank" rel="noopener noreferrer"
-										className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
-										<ExternalLink className="w-4 h-4" />
-										<span>Live</span>
-									</a>
+									{project.demo && (
+										<a href={project.demo} target="_blank" rel="noopener noreferrer"
+											className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
+											<ExternalLink className="w-4 h-4" />
+											<span>Demo</span>
+										</a>
+									)}
 								</div>
 							</div>
 						</div>
